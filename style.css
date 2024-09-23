@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:rgb(112 85 72);
+    --font-size: 16px;
+
+}
+.container{
+    width:100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.part1{
+   
+    height: 100%;
+    width: 26%;
+}
+.part2{
+    background-color: rgb(0, 183, 255);
+    height: 100%;
+    width: 67%;
+    background-image: url("https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+
+}
+ .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(46, 18, 4, 0.521);
+}
+.part3{
+    height: 100%;
+    width: 7%;
+}
+.text{
+    color: white;
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    top: 50%;
+    transform: translate(30%,-50%);
+}
+.text h1{
+    font-weight: 900;
+    letter-spacing: 5px;
+    font-size: 70px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.small-img{
+    background-color: aliceblue;
+    background-image: url('https://images.unsplash.com/photo-1514626585111-9aa86183ac98?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: bottom;
+    background-size: cover;
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+.vertical-text{
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(230, 227, 226, 0.144);
+   
+    right: -14%;
+    top: 40%;
+     transform: rotate(90deg);
+     position: absolute;
+    
+}
+.vertical-text h1{
+    font-size: 60px;
+    letter-spacing: 10px;
+    font-weight: 100px;
+    
+}
+nav{position: absolute;
+    
+    margin: 30px 80px 0px 10px;
+    display: flex;
+    color: white;
+    align-items: center;
+    height: 10vh;
+}
+nav p{
+    margin-left: 20px;
+    width: 200px;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 100px;
+    
+}
